@@ -1,0 +1,51 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(2rem + 37px);
+    background-color: black;
+
+}
+#item1 {
+    display: grid;
+    grid-template-areas:
+        'home band tour contact more . . . . . . . . . . magnify'
+        '. . . . mores mores . . . . . . . . . .';
+}
+
+
+#mores {
+    grid-area: mores;
+    background-color: aqua;
+}
+.magnify {
+    grid-area: magnify;
+    background-color: aqua;
+align-self: center;   
+}
+
+.li {
+    margin: 0;
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ccc;
+border: 1px solid #ccc;
+
+}
+
+#item1 .li:hover {
+    color: #fff;
+    background-color: #fff;
+    text-decoration: none;
+
+}
+
+#item1 a {
+    padding: 1.5rem ;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    height: 100%;
+
+}

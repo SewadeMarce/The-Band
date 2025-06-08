@@ -1,0 +1,417 @@
+ #ul1 {
+     display: grid;
+     grid-template-columns: auto auto;
+     justify-content: space-between;
+     background-color: black;
+     color: white;
+ }
+
+ .li:hover {
+     background-color: gainsboro;
+
+ }
+
+ #header {
+     position: fixed;
+     top: 0;
+     width: 100vw;
+     background-color: black;
+     z-index: 1;
+
+ }
+
+ .band,
+ .contact,
+ .merch,
+ .tour {
+     grid-column: 1/3;
+     display: none;
+
+ }
+
+ .diplay-none-mobile {
+     display: none;
+ }
+
+ .li {
+     padding: 0.6rem 1.5rem;
+ }
+
+ #main {
+     padding: 2.7rem 0 0 0;
+     background-color: white;
+     color: black;
+ }
+
+ #figure1 img {
+     width: 100%;
+     height: 50vh;
+ }
+
+ #figure1 {
+     position: relative;
+     border: 1px solid black;
+     margin: 0;
+ }
+
+ #figure1 figcaption {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     color: white;
+     padding: 1rem;
+     width: 100%;
+ }
+
+ #section1,
+ #section3,#section4 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 1rem;
+
+ }
+
+ #main i {
+     color: #777;
+     padding: 0 0 1rem  0;
+ }
+
+ #main h1 {
+     text-align: center;
+     padding: 3rem 1rem 0;
+     margin: 0;
+ }
+
+ #section1 p {
+     padding: 1rem;
+     text-align: justify;
+ }
+
+ #section1 article,
+ #section2 article,
+ #section3 article, #section4 article {
+     max-width: 95vw;
+     width: 55rem;
+ }
+
+ #section2 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 2rem 0;
+     background-color: white;
+     color: black;
+
+ }
+
+ #section2 article {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 1rem;
+     padding: 0 1rem;
+
+ }
+
+ #section2 figcaption {
+     text-align: center;
+
+ }
+
+ #section2 img {
+     width: 50vw;
+     padding: 5px;
+ }
+
+ #section3 {
+     background: black;
+     color: white;
+     padding: 1rem 1rem 5rem ;
+     gap: 2rem;
+ }
+
+ #section3 #article {
+     background-color: white;
+     display: grid;
+     grid-template-columns: auto 1fr;
+     color: #777;
+ }
+
+ #span2, #span4{
+    background-color:orangered;
+    padding: 0.3rem;
+ }
+ #div1 {
+     grid-column: 1/3;
+     grid-row: 1/2;
+     border-bottom: 1px solid gray; 
+     padding: 0.5rem;
+
+
+ }
+
+ #div2 {
+     grid-column: 1/3;
+     grid-row: 2/3;
+     border-bottom: 1px solid gray; 
+     padding: 0.5rem;
+ }
+
+ #span5 {
+     grid-row: 3/4;
+     padding: 0.5rem;
+ }
+
+ #span6 {
+     grid-column: 2/4;
+     grid-row: 3/4;
+     background-color: black;
+     color: white;
+     justify-self: end;
+     height: 23px;
+     width: 21px;
+     text-align: center;
+     border-radius: 50%;
+ }
+
+#section3  #article2{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#section3 figure{
+    background-color: white;
+    color: black;
+
+}
+button{
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
+    border: none;
+}
+#section3 figcaption,#section3 figcaption p {
+    padding: 1rem;
+}
+#section4 article{
+    display: grid;
+    grid-template-columns: auto;
+gap: 5rem;}
+form{
+    display: grid;
+    gap: 1rem;
+    
+}
+form button{
+    justify-self: end;
+    padding: 1rem 2rem;
+}
+form input, form button, textarea{
+    border:1px solid #777;
+    padding: 0.5rem;
+}
+footer{
+    display: flex;
+    background-color: #ccc;
+    padding: 1rem;
+    justify-content: center;
+
+}
+small{
+    padding: 1rem;
+}
+#section4{
+    padding-bottom: 5rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    form{
+        grid-template-columns: auto auto;
+    }
+    #message{
+        grid-column: 1/3;
+
+    }
+    form button{
+        justify-self: end;
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+#section4 article{
+    grid-template-columns: 1fr auto;
+
+}
+    
+#section3  #article2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+justify-content: center;}
+
+     #section2 article {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         gap: 7rem;
+
+
+     }
+   
+     #section2 article img {
+         width: 10rem;
+     }
+
+     .display-none-lg {
+         display: none;
+     }
+
+     #figure1 img {
+         width: 100%;
+         height: 100vh;
+     }
+
+     #ul1 {
+
+         grid-template-columns: auto auto auto auto auto auto 1fr;
+         justify-content: start;
+
+     }
+
+     .band,
+     .contact,
+     .tour,
+     .more,
+     .search {
+         display: inherit;
+
+     }
+
+     .band {
+         grid-column: 2/3;
+         grid-row: 1/2;
+
+     }
+
+     .tour {
+         grid-column: 3/4;
+         grid-row: 1/2;
+
+     }
+
+     .contact {
+         grid-column: 4/5;
+         grid-row: 1/2;
+
+
+     }
+
+     .more {
+         grid-column: 5/6;
+         grid-row: 1/2;
+         position: relative;
+
+
+     }
+
+     .more a::after {
+         content: url("../svg/arrow-down-drop-circle.svg");
+         position: relative;
+         top: 0.3rem;
+     }
+
+     .search {
+         justify-self: end;
+         grid-column: 6/8;
+         grid-row: 1/2;
+     }
+
+     .mores {
+         display: none;
+         position: absolute;
+         top: 2.8rem;
+         background-color: rgb(255, 255, 255);
+         color: black;
+     }
+
+     .mores li {
+         padding: 0.6rem 1.5rem;
+
+     }
+
+     .mores li:hover {
+         background-color: lightgray;
+     }
+
+     .more:hover .mores {
+         display: inherit;
+     }
+
+     /* Show the dropdown menu on hover */
+     .dropdown:hover .dropdown-content {
+         display: block;
+     }
+
+     #figure1 figcaption {
+         display: inherit;
+     }
+
+ }
+
+
+
+
+ .gallery {
+     border: 1px solid #ccc;
+ }
+
+ .gallery:hover {
+     border: 1px solid #777;
+ }
+
+ .gallery img {
+     width: 100%;
+     height: auto;
+ }
+
+ .desc {
+     padding: 15px;
+     text-align: center;
+ }
+
+ * {
+     box-sizing: border-box;
+ }
+
+ .responsive {
+     padding: 0 6px;
+     float: left;
+     width: 24.99999%;
+ }
+
+ @media only screen and (max-width: 700px) {
+     .responsive {
+         width: 49.99999%;
+         margin: 6px 0;
+     }
+ }
+
+ @media only screen and (max-width: 500px) {
+     .responsive {
+         width: 100%;
+     }
+ }
+
+ .clearfix:after {
+     content: "";
+     display: table;
+     clear: both;
+ }

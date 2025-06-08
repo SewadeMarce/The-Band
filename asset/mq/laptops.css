@@ -1,0 +1,98 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+}
+
+#item1 {
+    display: grid;
+    grid-template-areas:
+        'home . . . more  . . magnify magnify magnify magnify'
+        '. . . . mores  mores . . . . .';
+}
+
+#mores {
+    display: none;
+    grid-area: mores;
+    background-color: white;
+
+}
+
+
+
+.magnify {
+    grid-area: magnify;
+    justify-self: end;
+    background-color: black;
+    text-decoration: none;
+    padding: 0.5rem;
+
+}
+
+.li:hover {
+    background-color: rgba(224, 224, 224, 0.911);
+}
+
+.li {
+    height: 3rem;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    height: 100%;
+}
+
+#main {
+    margin: 3rem 0 0 0;
+}
+
+#item2 a {
+    color: black;
+}
+
+#new::after {
+    content: url('../svg/arrow-down-drop-circle.svg');
+    position: relative;
+    top: 5px;
+}
+
+.fi {
+    background-color: aqua;
+    height: 100vh;
+    width: 100vw;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.fi figcaption {
+    position: relative;
+    bottom: 6.5rem;
+    text-align: center;
+    color: aliceblue;
+}
+#section1 {
+    display: flex;
+justify-content: center;}
+  
+#div{
+width: 900px;
+}
+#section1-doc img {
+    display: grid;
+    max-width: 100%;
+    height: auto;
+}
+#section1 h1 {
+    font-size: 2rem;
+justify-self: center;
+  background-color: aqua;
+}
